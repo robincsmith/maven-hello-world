@@ -1,7 +1,7 @@
 node {
     stage('Setup') {
-        sh 'rm -rf maven-hello-world'
-        git 'https://github.com/robincsmith/maven-hello-world.git'
+        sh 'rm -rf *'
+        checkout scm
     }
 
     stage('Build') {
